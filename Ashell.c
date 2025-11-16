@@ -6,15 +6,22 @@ int main() {
 
     // Test: Try Taking One Line Of User Input
     // Use Getline
-    char *input_buffer;
-    size_t buffer_size = 5;
-
-    input_buffer = (char *)malloc(sizeof(char) * buffer_size);
-
-    // Collect Line From User
-    getline(&input_buffer, &buffer_size, stdin);
-
-    printf("You Typed: %s\n", input_buffer);
     
+    while(1) {
+    
+        char *input_buffer;
+        size_t buffer_size = 5;
+
+        input_buffer = (char *)malloc(sizeof(char) * buffer_size);
+
+        // Collect Line From User
+        getline(&input_buffer, &buffer_size, stdin);
+
+        printf("You Typed: %s\n", input_buffer);
+        
+        free(input_buffer);
+    }
+    
+
     return 0;
 }
