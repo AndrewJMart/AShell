@@ -4,12 +4,19 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+int PATH_MAX = 1000;
 
 int main() {
-    printf("\nHello, I'm AShell!\n");
     while(1) {
-    
-        printf("AShell> ");
+
+        char cwd[PATH_MAX];
+
+        getcwd(cwd, sizeof(cwd));
+
+        char ashell_intro[] = "$ ";
+
+        printf("%s%s", cwd, ashell_intro);
+
         size_t buffer_size = 5;
 
         char *input_buffer = (char *)malloc(sizeof(char) * buffer_size);
