@@ -26,6 +26,17 @@ int main() {
 
         input_buffer[strcspn(input_buffer, "\n")] = '\0';
 
+        // Rewrite All Tabs As Spaces
+        int buffer_count = strlen(input_buffer);
+
+        for (int char_pos = 0; char_pos != buffer_count; char_pos++) {
+            if (input_buffer[char_pos] == '\t') {
+                input_buffer[char_pos] = ' ';
+            }
+        } 
+
+        printf("%s",input_buffer);
+
         // Parse Input Line
         char *input_pointer = input_buffer;
 
