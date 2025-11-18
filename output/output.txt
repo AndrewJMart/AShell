@@ -1,0 +1,10 @@
+.
+..
+.git
+Makefile
+README.md
+bin
+include
+obj
+output
+src
