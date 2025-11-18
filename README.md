@@ -60,10 +60,6 @@ cd /home/user
 echo Hello > output.txt
 ```
 
-* `exit` will terminate the shell
-* `cd` without arguments will navigate to the home directory
-* Multiple commands can be executed in parallel by separating them with `&`
-
 ## Cleaning the Build
 
 To clean up compiled files and object files:
