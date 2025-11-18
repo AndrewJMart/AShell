@@ -1,0 +1,11 @@
+.
+..
+.git
+AShell
+AShell.c
+README.md
+execution.c
+execution.h
+output.txt
+parsing.c
+parsing.h
